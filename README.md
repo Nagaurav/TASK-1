@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# 🔢 Factorial Calculator Web App
 
-## Project info
+A responsive and user-friendly web application to calculate the factorial of a number using both **iterative** and **recursive** methods. Built with HTML, CSS, and JavaScript, this app validates user input and displays results clearly. Optional backend support is included using Node.js and Express.
 
-**URL**: https://lovable.dev/projects/09fb16fd-38eb-4cda-83db-e9074443321f
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- Calculate factorial using:
+  - ✅ Iterative method
+  - ✅ Recursive method
+- Input validation for positive integers
+- Clear display of both results
+- Responsive design for all screen sizes
+- Optional: Backend API for factorial computation
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/09fb16fd-38eb-4cda-83db-e9074443321f) and start prompting.
+## 🧑‍💻 Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend:
+- HTML5
+- CSS3 (or TailwindCSS / Bootstrap)
+- JavaScript (Vanilla)
 
-**Use your preferred IDE**
+### Backend (Optional):
+- Node.js
+- Express.js
+- REST API (`/api/factorial`)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📸 Screenshots
 
-Follow these steps:
+> _Include screenshots here showing input field, results, and responsiveness._
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Live Demo
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Frontend-only version:**  
+🌐 [https://yourusername.github.io/factorial-calculator](https://yourusername.github.io/factorial-calculator)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**Full-stack version (Optional):**  
+🌐 [https://factorial-api-demo.render.com](https://factorial-api-demo.render.com)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+factorial-calculator/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── (optional)
+├── server.js
+└── routes/
+└── factorial.js
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+yaml
+Copy
+Edit
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🧪 How It Works
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 1. Enter a positive integer.
+### 2. Click "Calculate".
+### 3. See both:
+- Iterative result
+- Recursive result
 
-## How can I deploy this project?
+> Example: Input `5`  
+> Output: `Iterative: 120` | `Recursive: 120`
 
-Simply open [Lovable](https://lovable.dev/projects/09fb16fd-38eb-4cda-83db-e9074443321f) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## ✅ Input Validation Rules
 
-Yes, you can!
+- Only allows whole numbers ≥ 0
+- Disallows:
+  - Negative numbers
+  - Floating point numbers
+  - Non-numeric input
+- Error message is shown for invalid input
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🔧 Run Locally
+
+### 👉 Frontend Only:
+```bash
+git clone https://github.com/yourusername/factorial-calculator.git
+cd factorial-calculator
+open index.html
